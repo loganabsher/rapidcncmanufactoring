@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/loganabsher/rapidcncmanufactoring/issues"
   },
-  "homepage": "https://github.com/loganabsher/rapidcncmanufactoring#readme"
+  "homepage": "https://github.com/loganabsher/rapidcncmanufactoring#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
