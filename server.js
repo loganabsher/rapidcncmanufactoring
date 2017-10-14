@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.get('/*', (req, res) => res.sendFile(`${__dirname}/index.html`));
+// TODO: rework routes
+app.get('/*', (request, response) => response.sendFile(`${__dirname}/public/index.html`, {root: '.'}));
 
 app.listen(PORT, function(){
   console.log('server up:', PORT);
