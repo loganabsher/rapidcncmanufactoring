@@ -2,7 +2,7 @@
   font-family: 'Bellefair', serif;
 } */
 
-body{
+.container-fluid{
   padding-left: 5%;
   padding-right: 5%;
 }
