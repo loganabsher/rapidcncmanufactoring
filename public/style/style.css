@@ -1,0 +1,18 @@
+/* html{
+  font-family: 'Bellefair', serif;
+} */
+
+.container-fluid{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+li{
+  list-style: none;
+  display: inline;
+}
+
+li a{
+  color: black;
+  text-decoration: none;
+}

@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Rapid Manufacturing</title>
     <meta charset="utf-8">
-    <title>Rapid CNC Manufactoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- dependencies -->
-    <link rel="stylesheet" href="vendors/styles/normalize.css">
-    <link rel="stylesheet" href="vendors/styles/default.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Dependencies -->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   </head>
+
   <body>
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
+    <div id="title">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Rapid Manufacturing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-    <div id="home">
-      <h2>The Home Page</h2>
+    <div id="home" class="container-fluid">
+      <h2>Welcome</h2>
+      <h3>Trusted manufacturer in the Seattle area since ...</h3>
     </div>
-    <div id="contact">
-      <h2>The Contact Page</h2>
+    <div id="contact" class="container-fluid">
+      <h2>Contact</h2>
+      <h3>Contact us through email or phone at ...</h3>
     </div>
-    <div id="about">
-      <h2>The About Page</h2>
+    <div id="about" class="container-fluid">
+      <h2>about</h2>
+      <h3>Our team of experienced machinists ...</h3>
     </div>
-
-    <!-- dependancies -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
+    <footer>
+      <!-- legal info / copyright -->
+    </footer>
+    <!-- Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="vendors/scripts/handlebars.js"></script>
+    <script src="vendors/scripts/highlight.pack.js"></script>
+    <script src="vendors/scripts/marked.js"></script>
     <script src="vendors/scripts/page.js"></script>
-
-    <!-- controllers -->
-    <script src="routes/controller.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Frameworks -->
+    <script src="scripts/models/repo.js"></script>
+    <!-- Filters/Views -->
+    <script src="scripts/views/repoView.js"></script>
+    <!-- Routes -->
+    <script src="scripts/controllers/homeController.js"></script>
+    <script src="scripts/controllers/contactController.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>
